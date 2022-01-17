@@ -45,14 +45,28 @@ body {
 	margin: 0 auto;
 }
 
-.page__section {
-	min-height: 100vh;
+.page-section {
 	background-image: url("../images/page-bg.jpg");
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
 	position: relative;
-	padding: 74px 0 50px;
+	&::before {
+		content: '';
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		position: absolute;
+		background: linear-gradient(107.54deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);
+		opacity: 0.15;
+	}
+	&__wrapper {
+		min-height: 100vh;
+		padding: 74px 0 50px;
+		position: relative;
+		z-index: 1;
+	}
 }
 
 .title {
@@ -61,6 +75,7 @@ body {
 	line-height: 53px;
 	padding-left: 25px;
 	margin-bottom: 55px;
+	padding-top: 200px;
 }
 
 .scroll__btn {
