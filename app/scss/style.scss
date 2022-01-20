@@ -296,12 +296,24 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   &__item {
-
   }
   &__box {
-
+    width: 280px;
+    position: relative;
+  }
+  &__box-title {
+    font-size: 21px;
+    line-height: 28px;
+    @extend %ubuntu-bold;
+    margin-bottom: 10px;
+  }
+  &__box-text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
   }
 }
 
