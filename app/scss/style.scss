@@ -316,9 +316,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 25px;
   }
 
-  &__item {
+  &__item--center {
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   &__box {
