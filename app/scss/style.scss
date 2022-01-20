@@ -173,14 +173,18 @@
   cursor: pointer;
   z-index: 5;
   bottom: -45px;
+
   svg {
     stroke: #000;
   }
+
   &__left {
     right: 60px;
   }
+
   &.slick-disabled {
     background-color: #000;
+
     svg {
       stroke: #fff;
     }
@@ -199,6 +203,7 @@
     flex-wrap: wrap;
     padding-left: 25px;
   }
+
   &__item {
     display: flex;
     align-items: flex-end;
@@ -208,15 +213,19 @@
       margin-left: 40px;
       transform: translateY(25px);
     }
+
     &:nth-child(3) {
       margin-left: 30px;
     }
-    nth-child(4) {
-      margin-left: 60px;
-    }
+
+  nth-child(4) {
+    margin-left: 60px;
+  }
+
     &:first-child,
     &:nth-child(3) {
       position: relative;
+
       &::before,
       &::after {
         content: '';
@@ -225,6 +234,7 @@
         background-position: 0 0;
       }
     }
+
     &:first-child {
       &::before {
         height: 48px;
@@ -234,6 +244,7 @@
         top: 31px;
       }
     }
+
     &:nth-child(3) {
       &::before {
         background-image: url("../images/line-3.svg");
@@ -242,6 +253,7 @@
         right: -55px;
         top: 50px;
       }
+
       &::after {
         background-image: url("../images/line-2.svg");
         width: 463px;
@@ -251,15 +263,18 @@
       }
     }
   }
+
   &__num {
     font-size: 36px;
     line-height: 41px;
     @extend %ubuntu-bold;
     margin-right: 10px;
   }
+
   &__img {
     position: relative;
     margin-right: 32px;
+
     &::before {
       content: '';
       position: absolute;
@@ -271,9 +286,11 @@
       z-index: -1;
     }
   }
+
   &__info {
     width: 300px;
   }
+
   &__info-title {
     width: 123px;
     font-size: 21px;
@@ -281,6 +298,7 @@
     @extend %ubuntu-bold;
     margin-bottom: 10px;
   }
+
   &__info-text {
     font-size: 15px;
     line-height: 18px;
@@ -293,23 +311,70 @@
   background-position: top center;
   background-size: cover;
   position: relative;
+
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   &__item {
   }
+
   &__box {
     width: 280px;
     position: relative;
+    margin-top: 10px;
+    &::before {
+      content: '';
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+    }
   }
+  &__box-2 {
+    margin-top: 140px;
+  }
+  &__box-4 {
+    margin-top: 160px;
+  }
+  &__box-1:before {
+    background-image: url("../images/pointer-1.svg");
+    width: 229px;
+    height: 114px;
+    right: -140px;
+    top: 16px;
+  }
+  &__box-2:before {
+    background-image: url("../images/pointer-2.svg");
+    width: 345px;
+    height: 81px;
+    right: -308px;
+    top: -65px;
+  }
+  &__box-3:before {
+    background-image: url("../images/pointer-3.svg");
+    width: 258px;
+    height: 103px;
+    left: -299px;
+    top: 16px;
+  }
+  &__box-4:before {
+    background-image: url("../images/pointer-4.svg");
+    width: 124px;
+    height: 89px;
+    left: -129px;
+    top: -73px;
+  }
+
   &__box-title {
     font-size: 21px;
     line-height: 28px;
     @extend %ubuntu-bold;
     margin-bottom: 10px;
   }
+
   &__box-text {
     font-weight: 300;
     font-size: 15px;
