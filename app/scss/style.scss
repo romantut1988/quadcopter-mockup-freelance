@@ -392,17 +392,18 @@
   background-size: cover;
   position: relative;
   &__items {
-    max-width: 757px;
+    max-width: 758px;
   }
   &__item {
-
+    max-width: 690px;
+    background: rgba(0, 0, 0, 0.3);
   }
   &__item-title {
-    max-width: 690px;
+
     font-size: 21px;
     line-height: 28px;
     @extend %ubuntu-medium;
-    background: rgba(0, 0, 0, 0.3);
+
     color: rgba(#fff, .8);
     padding: 20px 40px 24px 40px;
   }
