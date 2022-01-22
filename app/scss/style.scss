@@ -534,6 +534,12 @@
     padding: 9px 15px;
     color: #fff;
     background-color: transparent;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
   }
   &__social-list {
     display: flex;
@@ -542,6 +548,12 @@
   }
   &__social-item {
     margin: 14px 0;
+  }
+  &__social-link {
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
