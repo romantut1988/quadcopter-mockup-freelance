@@ -3,6 +3,7 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
+@import 'media';
 
 .header {
   position: fixed;
@@ -10,7 +11,6 @@
   left: 0;
   top: 30px;
   right: 0;
-
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -21,7 +21,6 @@
     line-height: 17px;
     @extend %ubuntu-medium;
   }
-
   &__btn {
     color: #fff;
     background-color: transparent;
@@ -53,6 +52,12 @@
     & + .menu__list-item {
       padding-left: 20px;
     }
+  }
+  &__list-phone {
+    display: none;
+  }
+  &__btn {
+    display: none;
   }
 }
 
