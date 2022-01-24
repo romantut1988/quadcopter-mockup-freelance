@@ -28,5 +28,9 @@ $(function () {
         anchors: ['top', 'products', 'benefits', 'specification', 'questions', 'contacts'],
     });
 
+    $('.menu__btn').on('click', function() {
+        $('.menu__btn').toggleClass('menu__btn--active');
+    });
+
 
 });
