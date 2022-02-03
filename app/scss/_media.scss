@@ -29,6 +29,11 @@
 }
 
 @media (max-width: 1100px) {
+  .header {
+    background: rgba(255,255,255,.2);
+    padding: 25px 0;
+    top: 0;
+  }
   .menu {
     order: 1;
   }
@@ -165,6 +170,23 @@
     line-height: 22px;
     top: -85px;
 
+  }
+}
+
+@media (max-width: 940px) {
+  .products__inner {
+    display: block;
+  }
+  .products__text {
+    padding-right: 0;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .products__slider {
+    margin-left: auto;
+  }
+  .products {
+    padding-bottom: 80px;
   }
 }
 
